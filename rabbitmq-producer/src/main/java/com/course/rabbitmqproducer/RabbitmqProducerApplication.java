@@ -17,8 +17,8 @@ public class RabbitmqProducerApplication implements CommandLineRunner {
 	}
 	
 	public void run(String... args) throws Exception {
-		helloRabbitProducer.sendHelloToQueue1("Message 1 " + Math.random());
-		helloRabbitProducer.sendHelloToQueue2("Message 2 " + Math.random());
+		helloRabbitProducer.sendHelloToQueue1("Message 1 da fila 1 " );
+		helloRabbitProducer.sendHelloToQueue2("Message 2 da fila 2 ");
 	}
 	
 

@@ -12,11 +12,11 @@ public class HelloRabbitProducer {
 	private RabbitTemplate rabbitTemplate;
 	
 	public void sendHelloToQueue1(String name) {
-		rabbitTemplate.convertAndSend("course.queue1", "Producing" + name);
+		rabbitTemplate.convertAndSend("course.queue1", name);
 	}
 	
 	public void sendHelloToQueue2(String name) {
-		rabbitTemplate.convertAndSend("course.queue2", "Producing" + name);
+		rabbitTemplate.convertAndSend("course.queue2", name);
 	}
 	
 }
